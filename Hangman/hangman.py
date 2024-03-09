@@ -4,7 +4,7 @@
 # input: User selects the game options (word length and number of lives). The user also guesses letters that are in the hidden target word.
 # output: Outputs whether a user has guessed a correct letter, guessed the word, or ran out of guesses
 
-from random import choice, random, randint
+from random import choice, randint
 from sys import exit
 
 dictionary_file = "dictionary.txt"   # make a dictionary.txt in the same folder where hangman.py is located
