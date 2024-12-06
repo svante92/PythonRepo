@@ -4,7 +4,6 @@
 
 from random import choice
 
-
 class Fifteen:
 
     def __init__(self, size=4):
@@ -81,8 +80,8 @@ class Fifteen:
                     s += '\n'
         return s
 
-
 if __name__ == '__main__':
+    '''
     game = Fifteen()
     assert str(game) == ' 1  2  3  4 \n 5  6  7  8 \n 9 10 11 12 \n13 14 15    \n'
     assert game.is_valid_move(15) == True
@@ -97,9 +96,8 @@ if __name__ == '__main__':
     game.shuffle()
     assert str(game) != ' 1  2  3  4 \n 5  6  7  8 \n 9 10 11 12 \n13 14 15    \n'
     assert game.is_solved() == False
-
-    '''You should be able to play the game if you uncomment the code below'''
     '''
+
     game = Fifteen()
     game.shuffle()
     game.draw()
@@ -114,8 +112,3 @@ if __name__ == '__main__':
         if game.is_solved():
             break
     print('Game over!')
-    '''
-
-
-
-
